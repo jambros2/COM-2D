@@ -18,14 +18,6 @@ class circle : shape {
 
     public:
 
-        void position(const std::array<double, 2> & _pos);
-
-        const std::array<double, 2> & position();
-
-        void type(const ShapeType & _type);
-
-        const ShapeType & type();
-
         virtual std::array<double, 2> com();
 
         virtual double area();
