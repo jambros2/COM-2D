@@ -1,7 +1,7 @@
 #ifndef CIRC_H
 #define CIRC_H
 
-#include "shape.h"
+#include "shape.hpp"
 
 namespace shapes {
 
@@ -14,7 +14,7 @@ class circle : shape {
     private:
 
         ///The radius of the circle
-        double radius;
+        double r;
 
     public:
 

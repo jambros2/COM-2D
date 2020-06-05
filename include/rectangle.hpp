@@ -1,7 +1,7 @@
 #ifndef RECT_H
 #define RECT_H
 
-#include "shape.h"
+#include "shape.hpp"
 
 namespace shapes {
 
@@ -15,10 +15,10 @@ class rectangle : shape {
     private:
 
         ///The width of the rectangle
-        double width;
+        double w;
 
         ///The height of the rectangle
-        double height;
+        double h;
 
     public:
 

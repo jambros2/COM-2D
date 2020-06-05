@@ -1,7 +1,7 @@
 #ifndef SEMICIRC_H
 #define SEMICIRC_H
 
-#include "shape.h"
+#include "shape.hpp"
 
 namespace shapes {
 

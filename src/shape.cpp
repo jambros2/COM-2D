@@ -1,4 +1,4 @@
-#include "shapes.hpp"
+#include "../include/shape.hpp"
 
 namespace shapes {
 
@@ -11,20 +11,18 @@ const std::array<double, 2> & shape::position() {
 }
 
 void shape::type(const ShapeType & _type) {
-    type = _type;
+    t = _type;
 
 const ShapeType & shape::type() {
-    return type;
+    return t;
 }
 
-virtual std::array<double, 2> shape::com() {
+std::array<double, 2> shape::com() {
     return pos;
 }
 
-virtual double shape::area() {
+double shape::area() {
     return 0.0;
 }
 
 } //namespace shapes
-
-#endif //SHAPE_H

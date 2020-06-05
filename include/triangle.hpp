@@ -1,7 +1,7 @@
 #ifndef TRI_H
 #define TRI_H
 
-#include "shape.h"
+#include "shape.hpp"
 
 namespace shapes {
 
@@ -15,10 +15,10 @@ class triangle : shape {
     private:
 
         ///The base of the triangle
-        double base;
+        double b;
 
         ///The height of the triangle
-        double height;
+        double h;
 
     public:
 

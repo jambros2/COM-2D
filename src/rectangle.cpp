@@ -1,32 +1,32 @@
-#include "rectangle.hpp"
+#include "../include/rectangle.hpp"
 
 namespace shapes {
 
-virtual std::array<double, 2> rectangle::com() {
+std::array<double, 2> rectangle::com() {
     std::array<double, 2> com;
-    com[0] = width/2.0 + pos[0];
-    com[1] = height/2.0 + pos[1];
+    com[0] = w/2.0 + pos[0];
+    com[1] = h/2.0 + pos[1];
     return com;
 }
 
-virtual double rectangle::area() {
-    return width*height;
+double rectangle::area() {
+    return w*h;
 }
 
 void rectangle::width(const double & _width) {
-    width = _width;
+    w = _width;
 }
 
 const double & rectangle::width() {
-    return width;
+    return w;
 }
 
 void rectangle::height(const double & _height) {
-    height = _height;
+    h = _height;
 }
 
 const double & rectangle::height() {
-    return height;
+    return h;
 }
 
 } //namespace shapes

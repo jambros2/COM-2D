@@ -1,22 +1,22 @@
-#include "circle.hpp"
-#include <math>
+#include "../include/circle.hpp"
+#include <math.h>
 
 namespace shapes {
 
-virtual std::array<double, 2> circle::com() {
+std::array<double, 2> circle::com() {
     return pos;
 }
 
-virtual double circle::area() {
-    return M_PI*radius*radius;
+double circle::area() {
+    return M_PI*r*r;
 }
 
 void circle::radius(const double & _radius) {
-    radius = _radius;
+    r = _radius;
 }
 
 const double & circle::radius() {
-    return radius;
+    return r;
 }
 
 } //namespace shapes

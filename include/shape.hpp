@@ -20,13 +20,13 @@ enum ShapeType {
  */
 class shape {
 
-    private:
+    protected:
 
         ///The position of the shape
         std::array<double, 2> pos;
 
         ///The way in which this shape is a part of the system (hole or solid)
-        ShapeType type;
+        ShapeType t;
 
     public:
 

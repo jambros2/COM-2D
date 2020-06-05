@@ -1,12 +1,13 @@
-#include "semi_circle.h"
+#include "../include/semi_circle.h"
+#include <math.h>
 
 namespace shapes {
 
-virtual std::array<double, 2> semiCircle::com() {
+std::array<double, 2> semiCircle::com() {
     return pos;
 }
 
-virtual double semiCircle::area() {
+double semiCircle::area() {
     return M_PI/2.0 * radius * radius;
 }
 
