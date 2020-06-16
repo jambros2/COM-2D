@@ -10,7 +10,7 @@ namespace shapes {
  * The rectangle's position is defined by the bottom
  * left corner
  */
-class rectangle : shape {
+class rectangle : public shape {
 
     private:
 

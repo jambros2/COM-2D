@@ -9,9 +9,9 @@ namespace shapes {
  * A base class for circles
  * A circle's position is defined by its center point
  */
-class circle : shape {
+class circle : public shape {
 
-    private:
+    protected:
 
         ///The radius of the circle
         double r;

@@ -2,6 +2,7 @@
 #define SEMICIRC_H
 
 #include "shape.hpp"
+#include "circle.hpp"
 
 namespace shapes {
 
@@ -9,7 +10,7 @@ namespace shapes {
  * A base class for semi-circles
  * A semi-circle's position is defined by the point in the middle of diameter
  */
-class semiCircle : circle {
+class semiCircle : public circle {
 
     public:
 

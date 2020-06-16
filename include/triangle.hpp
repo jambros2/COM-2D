@@ -10,7 +10,7 @@ namespace shapes {
  * right angle in the bottom left corner. The position
  * is defined by the vertex at the right angle
  */
-class triangle : shape {
+class triangle : public shape {
 
     private:
 

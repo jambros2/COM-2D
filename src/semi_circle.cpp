@@ -1,4 +1,4 @@
-#include "../include/semi_circle.h"
+#include "../include/semi_circle.hpp"
 #include <math.h>
 
 namespace shapes {
@@ -8,7 +8,7 @@ std::array<double, 2> semiCircle::com() {
 }
 
 double semiCircle::area() {
-    return M_PI/2.0 * radius * radius;
+    return M_PI/2.0 * r * r;
 }
 
 } //namespace shapes
