@@ -8,7 +8,7 @@ namespace shapes {
 
 std::array<double, 2> MultiShape::com() {
 
-    int i;
+    unsigned long int i;
     std::array<double, 2> current_com, temp_com;
     double temp_area;
     ShapeType current_shape;

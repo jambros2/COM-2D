@@ -12,6 +12,7 @@ const std::array<double, 2> & shape::position() {
 
 void shape::type(const ShapeType & _type) {
     t = _type;
+}
 
 const ShapeType & shape::type() {
     return t;
