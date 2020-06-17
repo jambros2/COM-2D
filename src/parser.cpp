@@ -7,12 +7,6 @@
 
 namespace shapes {
 
-    /**
-     * A function to parse the input of a shape file and
-     * construct a multi-shape
-     * @param inputFile a string for the path to the input file
-     * @return a multi-shape defined by the input file
-     */
     MultiShape *shapeParser::parse_input(const std::string &inputFile) {
 
         std::string line;
@@ -27,13 +21,19 @@ namespace shapes {
         file.open(inputFile.c_str());
 
         if(file.is_open()) {
+
+            ///Get lines from the file
             while(std::getline(file, line)) {
                 stream.clear();
                 stream.str(line.c_str());
                 words.clear();
+
+                ///Create a list of words from the line of CSV
                 while(std::getline(stream, word, ',')) {
                     words.push_back(word);
                 }
+
+                ///Add the shape to the multi-shape given the word list
                 the_shape->add_shape(words);
             }
         }

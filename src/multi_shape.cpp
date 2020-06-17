@@ -77,6 +77,9 @@ void MultiShape::add_shape(const std::vector<std::string> shape_line) {
         ((semiCircle *) temp_shape)->radius(strtod(shape_line[4].c_str(), NULL));
     }
 
+    ///Set the position of the shape
+    temp_shape->position(pos);
+
     ///Get the type of the shape using the array of types
     temp_shape->type(types[atoi(shape_line[1].c_str())]);
 
