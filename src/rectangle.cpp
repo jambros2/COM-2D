@@ -1,3 +1,7 @@
+//Author: Jonathan Ambrose
+//Date:   6-18-2020
+
+
 #include "../include/rectangle.hpp"
 
 namespace shapes {

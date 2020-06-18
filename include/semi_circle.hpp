@@ -1,3 +1,7 @@
+//Author: Jonathan Ambrose
+//Date:   6-18-2020
+
+
 #ifndef SEMICIRC_H
 #define SEMICIRC_H
 

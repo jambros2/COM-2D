@@ -1,3 +1,7 @@
+//Author: Jonathan Ambrose
+//Date:   6-18-2020
+
+
 #include "../include/multi_shape.hpp"
 #include "../include/rectangle.hpp"
 #include "../include/triangle.hpp"

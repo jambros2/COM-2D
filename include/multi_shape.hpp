@@ -1,3 +1,7 @@
+//Author: Jonathan Ambrose
+//Date:   6-18-2020
+
+
 #ifndef MULTISHAPE_H
 #define MULTISHAPE_H
 

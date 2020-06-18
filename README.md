@@ -6,7 +6,8 @@ rectangles, and triangles. Additionally, these shapes may be represented as a pa
 solid or a hole within the solid. Defined parts of the solid must only touch on their edges,
 and holes must be completely bounded by the combination of the solids. The center of mass for
 the combination is computed by using standard equations for each individual shape and using the
-area of the shapes in place of their mass. 
+area of the shapes in place of their mass when calculating the center of mass of their 
+combination. 
 
 Because this code was written purely as a code sample, error checking for the requirements of 
 the shapes is not done. Additionally, the input file defining the shapes is hard-coded to be

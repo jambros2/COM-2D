@@ -1,3 +1,7 @@
+//Author: Jonathan Ambrose
+//Date:   6-18-2020
+
+
 #include "../include/shape.hpp"
 
 namespace shapes {
