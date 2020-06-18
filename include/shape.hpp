@@ -30,6 +30,8 @@ class shape {
 
     public:
 
+        virtual ~shape();
+
         /**
          * Sets the position of the shape
          * @param _pos the new position of the shape

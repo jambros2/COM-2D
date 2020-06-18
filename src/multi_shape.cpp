@@ -6,6 +6,17 @@
 
 namespace shapes {
 
+MultiShape::~MultiShape() {
+
+    unsigned long int i;
+
+    for(i=0; i<all_shapes.size(); i++) {
+        delete(all_shapes[i]);
+    }
+
+    all_shapes.resize(0);
+}
+
 std::array<double, 2> MultiShape::com() {
 
     unsigned long int i;

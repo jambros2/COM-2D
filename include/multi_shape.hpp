@@ -20,6 +20,8 @@ class MultiShape {
 
     public:
 
+        ~MultiShape();
+
         /**
          * The function computes the center of mass of the combined 2D-shapes
          * @return the position of the center of mass relative to the

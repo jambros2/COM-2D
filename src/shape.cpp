@@ -2,6 +2,8 @@
 
 namespace shapes {
 
+shape::~shape() {}
+
 void shape::position(const std::array<double, 2> & _pos) {
     pos = _pos;
 }

@@ -18,5 +18,8 @@ int main() {
     center = s->com();
 
     printf("The center of mass is (%.4lf, %.4lf).\n", center[0], center[1]);
+
+    delete(s);
+
     return 0;
 }
