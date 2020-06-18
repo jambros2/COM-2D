@@ -4,7 +4,10 @@
 namespace shapes {
 
 std::array<double, 2> semiCircle::com() {
-    return pos;
+    std::array<double, 2> center;
+    center[0] = pos[0];
+    center[1] = pos[1] + 4.0*r/(3.0*M_PI);
+    return center;
 }
 
 double semiCircle::area() {

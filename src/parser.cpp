@@ -38,7 +38,7 @@ namespace shapes {
             }
         }
         else {
-            printf("File could not be opened. Please check current working directory\n");
+            fprintf(stderr, "File could not be opened. Please check current working directory\n");
             exit(1);
         }
 

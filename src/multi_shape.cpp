@@ -3,6 +3,7 @@
 #include "../include/triangle.hpp"
 #include "../include/semi_circle.hpp"
 #include "../include/circle.hpp"
+#include <cstdio>
 
 namespace shapes {
 
@@ -83,9 +84,13 @@ void MultiShape::add_shape(const std::vector<std::string> shape_line) {
         ((circle *) temp_shape)->radius(strtod(shape_line[4].c_str(), NULL));
     }
 
-    else {
+    else if (shape_line[0] == "SemiCircle") {
         temp_shape = new semiCircle();
         ((semiCircle *) temp_shape)->radius(strtod(shape_line[4].c_str(), NULL));
+    }
+    else {
+        fprintf(stderr, "Unrecognized shape %s\n", shape_line[0].c_str());
+        return;
     }
 
     ///Set the position of the shape

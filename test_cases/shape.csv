@@ -1,4 +1,5 @@
-Rectangle,1,0,0,4,5
-Rectangle,1,4,0,4,5
-Rectangle,1,0,5,4,5
-Rectangle,1,4,5,4,5
+Rectangle,1,0,0,50,60
+Triangle,1,50,0,50,60
+Rectangle,0,20,20,30,20
+SemiCircle,1,25,60,25
+Circle,0,20,50,10

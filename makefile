@@ -7,8 +7,8 @@ TARGET = bin/com
 
 all: $(LIBS) $(TARGET)
 
-$(TARGET): obj/com.o
-	$(CXX) -o $@ $^ $(LIBS)
+$(TARGET): obj/com.o $(LIBS)
+	$(CXX) -o $@ $^
 
 obj/com.o: driver/com.cpp
 	$(CXX) $(CXXFLAGS) -c $^ -o $@
