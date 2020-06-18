@@ -15,7 +15,8 @@ the shapes is not done. Additionally, the input file defining the shapes is hard
 sample. Additionally, all shapes are locked in a given orientation, as I have left the 
 rotation of the shapes and the mirroring of them to be a future exercise.
 
-As a code sample, this demonstrates:
+As a code sample, this demonstrates:  
+
   - Use of classes
   - Use of templating and polymorphism
   - I/O operations
