@@ -21,6 +21,7 @@ As a code sample, this demonstrates:
   - Use of templating and polymorphism
   - I/O operations
   - Use of makefiles
+  - Use of unit testing (Requires BOOST)
   - Doxygen for documentation
   - GitHub for version control
   - Use of Markdown and READMEs for out-of-source documentation
@@ -32,6 +33,13 @@ For any questions, concerns, or comments, please contact me at daniel-ambrose@ou
 For building within the root directory, simply run `make all` at the bash prompt.
 ```
 make all
+```
+
+### Testing ###
+
+The components may be tested by running:
+```
+make test
 ```
 
 ### Cleaning ###

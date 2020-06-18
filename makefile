@@ -19,5 +19,20 @@ lib/libshape.a: $(LIB_OBJS)
 obj/%.o: src/%.cpp
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
+# Tests
+
+TEST_TARGETS= circleTest rectangleTest triangleTest semiCircleTest multiShapeTest parserTest
+
+test: $(LIBS) $(TEST_TARGETS) $(addprefix run-,$(TEST_TARGETS))
+
+BOOST_TEST_LIBS = boost_unit_test_framework
+
+%: testing/%.cpp
+	$(CXX) -o $@ $^ -l$(BOOST_TEST_LIBS) $(LIBS)
+	mv $@ bin
+
+run-%: bin/%
+	-./$^ --log_level=test_suite
+
 clean:
 	rm -f bin/* obj/* lib/*

@@ -54,8 +54,10 @@ std::array<double, 2> MultiShape::com() {
     }
 
     ///Find the final com
-    current_com[0] /= combined_area;
-    current_com[1] /= combined_area;
+    if(combined_area != 0) {
+        current_com[0] /= combined_area;
+        current_com[1] /= combined_area;
+    }
 
     return current_com;
 }
